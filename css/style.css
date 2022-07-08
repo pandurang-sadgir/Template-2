@@ -142,7 +142,7 @@ section.home{
 
 
 
-.tour .max-width .tour-content,.about .max-width .about-content,.contact .max-width .contact-content{
+.tour .max-width .tour-content,.about .max-width .about-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -329,22 +329,17 @@ section.explore{
 
 /* Contact section styling  */
 
-section.contact{
-    border:red 0.1rem solid;
+
+.contact .max-width .contact-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
 }
 
-.contact .max-width{
-    border: 0.1rem green solid;
-}
 
-.contact .contact-content .column{
-    border: 0.1rem blue solid;
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
 
-}
 
 .contact .contact-content .column.left .already-customer{
     text-align: left;
@@ -409,4 +404,28 @@ section.contact{
     resize: none;
     margin-bottom:1rem ;
 
+}
+
+.contact .contact-content .column.right .card{
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.contact .contact-content .column.right .text{
+    font-size: 2rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+    font-family: 'poppins',sans-serif;
+
+}
+.contact .contact-content .column.right .team{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.contact .contact-content .column.right .team img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    object-fit: cover;
 }
