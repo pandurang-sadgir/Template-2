@@ -64,7 +64,7 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 0;
+    padding: 2rem 0;
 
 }
 .menu a{
@@ -98,7 +98,7 @@ section.home{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: 50rem;
+    min-height: 55rem;
 }
 
 .home .home-content h2{
@@ -300,7 +300,12 @@ section.explore{
 
 
 /* About section styling  */
-
+section.about{
+    border-bottom: 0.3rem transparent solid;
+    border-image: linear-gradient(70deg,#ff0,#f0f,rgb(89, 87, 199));
+    border-image-slice:1%;
+    box-shadow: 0 1rem 1.5rem rgba(246, 89, 89, 0.1);
+}
 .about .about-content .column.right .img{
     display: flex;
     flex-direction: row;
