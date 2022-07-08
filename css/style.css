@@ -142,7 +142,7 @@ section.home{
 
 
 
-.tour .max-width .tour-content,.about .max-width .about-content{
+.tour .max-width .tour-content,.about .max-width .about-content,.contact .max-width .contact-content{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -151,7 +151,7 @@ section.home{
 
 }
 
-.tour .tour-content .column,.about .about-content .column{
+.tour .tour-content .column,.about .about-content .column,.contact-content .column{
     width: calc(50% - 2rem);
     text-align: center;
 }
@@ -322,6 +322,11 @@ section.explore{
 }
 
 
+
+
+
+
+
 /* Contact section styling  */
 
 section.contact{
@@ -332,8 +337,76 @@ section.contact{
     border: 0.1rem green solid;
 }
 
-.contact .contact-content{
+.contact .contact-content .column{
     border: 0.1rem blue solid;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
 
 }
 
+.contact .contact-content .column.left .already-customer{
+    text-align: left;
+}
+.contact .contact-content .column.left .already-customer h4{
+    font-size: 1.8rem;
+    font-weight:initial;
+    margin-bottom: 1rem;
+}
+
+.contact .contact-content .column.left .already-customer input{
+    margin-left:1rem ;
+}
+
+
+.contact .contact-content .column.left .textarea textarea{
+    width: 100%;
+    resize: none;
+    font-size: 1.8rem;
+    font-family: 'poppins',sans-serif;
+    border: 0.1rem solid lightgrey;
+    border-radius: 0.6rem;
+    padding: 0 2rem;
+    margin: 1rem 0;
+
+}
+
+.contact .contact-content .column.left .button{
+    margin-bottom: 1rem;
+
+}
+.contact .contact-content .column.left .button button{
+    color: #000;
+    font-size: 1.8rem;
+    border: 0.1rem #000 solid;
+    padding: 1rem 2rem;
+    border-radius: 0.6rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    background: none;
+
+}
+
+.contact .contact-content .column.left .button button:hover{
+    background:#555;
+    color: #fff;
+    font-size: 2rem;
+    border: none;
+
+}
+
+.contact .contact-content .left .fields input{
+
+    height: 4.5rem;
+    width: 100%;
+    border: 0.1rem solid lightgrey;
+    border-radius: 0.6rem;
+    padding: 0 2rem;
+    font-size: 1.8rem;
+    font-family: 'poppins',sans-serif;
+    display: inline-block;
+    resize: none;
+    margin-bottom:1rem ;
+
+}

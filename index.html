@@ -145,8 +145,64 @@
         <section class="contact" id="contact">
             <div class="max-width">
                 <h1 class="title">Contact</h1>
+
+                <!-- <h2></h2> -->
+
              <div class="contact-content">
-                
+                <div class="column left">
+
+                    <form action="#">
+                        <div class="fields">
+                            <div class="field name"> 
+                                <input type="text" name="user-name" placeholder="Full Name" required>
+                            </div>
+
+                            <div class="field email">
+                                <input type="email" name="email-id" placeholder="Email" required>    
+                            </div>
+
+                            <div class="field company">
+                                <input type="text" name="company" placeholder="Company" required>
+                            </div>
+                        </div>  
+
+                            <div class="field already-customer">
+                                <h4>Are you an existing customer?</h4>
+                                <label for="yes">
+                                    <input type="radio" value="yes" name="already-customer" id="yes" required> 
+                                    &nbsp; Yes
+                                </label>
+            
+                                <label for="no">
+                                    <input type="radio" value="no" name="already-customer" id="no" required> &nbsp;No
+                                </label>
+                                
+                            </div>
+
+
+
+                            <div class="field textarea">
+                                <textarea name="message" id="" cols="30" rows="10" placeholder="Your message" required></textarea>
+                            </div>
+
+
+                            <div class="button">
+                                <button type="submit">Send message</button>
+                            </div>
+
+                                          
+                    </form>
+
+                </div>
+
+
+                <div class="column right"> 
+                    <div class="cards">
+                        <div class="card">
+                            
+                        </div>
+                    </div>
+                </div> 
              </div>
 
             </div>
