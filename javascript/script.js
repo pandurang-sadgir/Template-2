@@ -10,8 +10,9 @@ $(document).ready(function(){
         
     });
 
-    $('header .navbar .menu-btn').click(function(){
+    $('header .navbar .menu-btn,header .navbar .menu a').click(function(){
 
         $('header .navbar .menu').toggleClass('active');
+        $('header .navbar .menu-btn i').toggleClass('active');
     });
 })
