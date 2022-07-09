@@ -56,7 +56,14 @@ header{
     font-size: 1.6rem;
     position:fixed;
     width: 100%;
+    transition: all 0.3s ease;
+    z-index: 999;
     
+}
+
+header.addClass{
+    background-color: #333;
+    padding: 0.5rem 0;
 }
 
 .navbar{
@@ -79,7 +86,12 @@ header{
     color: white;
 }
 
+header .navbar .menu-btn{
+    color: #fff;
+    font-size: 2.5rem;
+    display: none;
 
+}
 
 
 /* Home section styling  */
@@ -99,19 +111,22 @@ section.home{
     justify-content: center;
     align-items: center;
     min-height: 55rem;
+    transition: all 0.3s ease;
 }
 
 .home .home-content h2{
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
+    font-size: 3rem;
     font-weight: 600;
     margin-bottom: 1rem;
 
     
 }
 .home .home-content h3{
-    font-size: 4rem;
+    font-size: 4.5rem;
     font-weight: 600;
     margin-bottom: 1rem;
+    
 
 
 }
@@ -451,4 +466,141 @@ footer span a{
 
 footer span a:hover{
     text-decoration: underline;
+}
+
+
+
+
+
+/* Responsiveness section start  */
+@media (min-width:1281px) {
+    
+}
+@media(min-width:1025px) and (max-width:1280px){
+
+}
+
+@media(min-width:768px) and (max-width:1024px){
+
+    
+ 
+}
+
+
+
+@media(min-width:100px) and (max-width:1024px){
+
+
+    header .navbar .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    header .navbar .menu a{
+        display: block;
+        margin: 2.5rem 0;
+    }
+
+    header .navbar .menu{
+        display: none ;
+    }
+    header .navbar .menu{
+        position: fixed;
+        top: -100%;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #222;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom-right-radius: 50%;
+        transition: all 0.3s ease;
+
+    }
+
+    header .navbar .menu.active{
+        top: 0;
+
+    }
+    
+
+
+}
+
+@media(min-width:481px) and (max-width:767px){
+
+    .home .home-content h2{
+        /* font-size: 2.5rem; */
+        font-size: 2.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        text-align: center;
+    
+        
+    }
+    .home .home-content h3{
+        font-size: 3.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        text-align: center;
+        
+    
+    
+    }
+    
+    /* .home .home-content a{
+        color: #fff;
+        font-size: 1.8rem;
+        border: 0.1rem #fff solid;
+        padding: 1rem 2rem;
+        border-radius: 0.6rem;
+        transition: all 0.3s ease;
+    
+    } */
+    
+}
+
+@media(min-width:320px) and (max-width:480px){
+    
+    .home .home-content h2{
+        /* font-size: 2.5rem; */
+        font-size: 2.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        text-align: center;
+    
+        
+    }
+    .home .home-content h3{
+        font-size: 3.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        text-align: center;
+    
+    }
+    
+    
+}
+
+@media(max-width:319px){
+ 
+    .home .home-content h2{
+        /* font-size: 2.5rem; */
+        font-size: 2.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        text-align: center;
+    
+        
+    }
+    .home .home-content h3{
+        font-size: 3.3rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+        text-align: center;
+    
+    }
+    
+       
 }
