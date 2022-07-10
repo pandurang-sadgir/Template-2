@@ -469,7 +469,14 @@ section.about{
     display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
 }
+
+.contact .contact-content .column.right .team .image {
+    margin-bottom: 1.5rem;
+
+}
+
 .contact .contact-content .column.right .team img{
     width: 12rem;
     height: 12rem;
