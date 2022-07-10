@@ -103,6 +103,7 @@ header.addClass{
     /* border: 0.1rem red solid; */
     padding: 0.5rem 0.7rem;
     position: relative;
+    z-index: 9999;
 }
 
 .navbar .menu a::after{
@@ -567,7 +568,7 @@ footer span a:hover{
 
     header .navbar .menu-btn{
         display: block;
-        z-index: 999;
+        z-index: 9999;
     }
 
     /* add cross icons  */
@@ -601,6 +602,7 @@ footer span a:hover{
 
     header .navbar .menu.active{
         top: 0;
+        z-index: 9999;
 
     }
     
