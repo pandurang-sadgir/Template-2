@@ -502,8 +502,30 @@ footer span a:hover{
     text-decoration: underline;
 }
 
+.scrollUpBtn{
+    position: fixed;
+    bottom: 0;
+    right: 0.2rem;
+    z-index: 9999;
+    color: rgb(71, 0, 224);
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 3rem;
+    padding: 1rem;
+    width: 5rem;
+    text-align: center;
+    display: none;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 
-
+.scrollUpBtn.scrollActive{
+    display: block;
+    bottom: 5rem;
+}
+.scrollUpBtn.scrollActive:hover{
+    transform: scale(1.2);
+}
 
 
 /* Responsiveness section start  */
