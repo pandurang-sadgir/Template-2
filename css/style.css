@@ -194,7 +194,7 @@ section.home{
 }
 
 .tour .tour-content .learn-more,.about .about-content .learn-more{
-    margin-top: 2rem;
+    margin: 2rem 0;
 }
 .tour .tour-content .learn-more a,.about .about-content .learn-more a{
     color: #222;
@@ -214,6 +214,7 @@ section.home{
     color: #fff;
     font-size: 2rem;
     border: none;
+    object-fit: cover;
 
 }
 
@@ -552,10 +553,18 @@ footer span a:hover{
     }
     
 
+    .tour .tour-content .column,.about .about-content .column,.contact-content .column{
+        width: calc(100%);
+    }
+
 
 }
 
 @media(min-width:481px) and (max-width:767px){
+    .max-width{
+        padding: 0 2.5rem;
+
+    }
 
     .home .home-content h2{
         /* font-size: 2.5rem; */
@@ -589,7 +598,10 @@ footer span a:hover{
 }
 
 @media(min-width:320px) and (max-width:480px){
-    
+    .max-width{
+        padding: 0 2.5rem;
+
+    }
     .home .home-content h2{
         /* font-size: 2.5rem; */
         font-size: 2.3rem;
@@ -611,7 +623,9 @@ footer span a:hover{
 }
 
 @media(max-width:319px){
- 
+    .max-width{
+        padding: 0 2.5rem;
+    }
     .home .home-content h2{
         /* font-size: 2.5rem; */
         font-size: 2.3rem;
